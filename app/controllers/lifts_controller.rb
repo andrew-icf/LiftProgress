@@ -13,6 +13,12 @@ class LiftsController < ApplicationController
     @lifts = Lift.all
   end
 
+  def destroy
+    @lift = Lift.find(params[:id])
+    @lift.destroy
+    head :no_content
+  end
+
   private
   def lift_params
     params.require(:lift).permit(:date, :lift_name, :is_metric, :weight_lifted, :reps_performed, :one_rm)
