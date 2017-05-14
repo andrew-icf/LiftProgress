@@ -47,7 +47,7 @@ coefficients = {
         React.DOM.input
           type: 'text'
           className: 'form-control'
-          placeholder: 'lift_name'
+          placeholder: 'lift name'
           name: 'lift_name'
           value: @state.lift_name
           onChange: @handleValueChange
@@ -56,7 +56,7 @@ coefficients = {
         React.DOM.input
           type: 'number'
           className: 'form-control'
-          placeholder: 'weight_lifted'
+          placeholder: 'weight lifted'
           name: 'weight_lifted'
           value: @state.weight_lifted
           onChange: @handleValueChange
@@ -67,7 +67,7 @@ coefficients = {
           min: 1
           max: 10
           className: 'form-control'
-          placeholder: 'reps_performed'
+          placeholder: 'reps'
           name: 'reps_performed'
           value: @state.reps_performed
           onChange: @handleValueChange
